@@ -1,0 +1,248 @@
+.clip_title{
+    text-align: center;
+    margin: 10rem 0 -5rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.clip_content{
+    display: block;
+    position: static;
+    width: 100%;
+    /* height: 20vh; */
+    overflow: hidden;
+    position: relative;
+    top: 10rem;
+}
+
+.clip_content>:nth-child(1){
+    object-fit: cover;
+    width: 100%;
+}
+
+.clip_content>:nth-child(2){
+    position: absolute;
+    top: 36%;
+    font-size: 5rem;
+    left: 50%;
+    transform: translate(-50%);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.clip_content>:nth-child(2)>:nth-child(1){
+    z-index: 12;
+}
+
+.clip_content>:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.clip_content>:nth-child(3)>*{
+    width: 2rem;
+    height: 2rem;
+    background: var(--pink);
+    border-radius: 100%;
+}
+
+.clip_content>:nth-child(3)>*.active{
+    background: #ffffff8a;
+}
+
+
+.pulsing {
+    width: 9rem;
+    height: 9rem;
+    z-index: -1;
+    position: absolute;
+    left: -2.4rem;
+    top: -1.9rem;
+    border-radius: 100%;
+    border: 5px solid #ffffff;
+    animation-duration: 3s;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.ok-2 {
+    animation-delay: 1s;
+}
+
+.ok-3 {
+    animation-delay: 2s;
+}
+
+.ok-4 {
+    animation-delay: 3s;
+}
+
+.video_player{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video_player>:nth-child(1){
+    width: 100%;
+    height: 100%;
+}
+
+.video_player span{
+    position: absolute;
+    color: #ffffff8b;
+    right: 2rem;
+    top: 0.5rem;
+    font-size: 2rem;
+    z-index: 999;
+    cursor: pointer;
+}
+
+
+
+
+@keyframes pulse {
+    from {
+      transform: scale(0.5);
+      opacity: 1;
+    }
+
+    to {
+      transform: scale(1);
+      opacity: 0;
+    }
+}
+
+
+
+
+@media (min-width: 1400px){
+
+    .clip_title{
+        margin: 0rem 0 -5rem 0;
+    }
+    .clip_content>:nth-child(2){
+        position: absolute;
+        top: 38%;
+        font-size: 6rem;
+    }
+
+    .pulsing {
+        left: -1.9rem;
+        top: -1.2rem;
+    }
+}
+
+@media (max-width: 1150px){
+
+    .clip_title{
+        margin: -4rem 0 -5rem 0;
+    }
+    .clip_content>:nth-child(2){
+        top: 34%;
+    }
+}
+
+@media (max-width: 960px) {
+    .clip_title{
+        font-size: 2.4rem;
+        margin: -1rem 0 -5rem 0;
+    }
+
+    .clip_content>:nth-child(2){
+        left: 50%;
+        top: 31.5%;
+    }
+
+    .clip_content>:nth-child(3){
+        transform: scale(0.75);
+    }
+
+    .video_player span{
+        right: 1.6rem;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 725px) {
+    .clip_title{
+        font-size: 1.7rem;
+        margin: 4rem 0 -10rem 0;
+    }
+
+    .clip_content{
+        top: 6rem;
+    }
+
+    .clip_content>:nth-child(2){
+        transform: scale(0.5);
+        left: 44.6%;
+        top: 28.6%;
+    }
+
+    .pulsing {
+        left: -2.3rem;
+        top: -2.05rem;
+        border: 6px solid #ffffff9f;
+    }
+
+    .clip_content>:nth-child(3){
+        transform: scale(0.65);
+        margin-top: 0;
+    }
+
+    .video_player span{
+        right: 0.7rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 524px) {
+    .clip_title{
+        margin: -2rem 0 -5rem 0;
+        font-size: 1.7rem;
+    }
+
+    .clip_content>:nth-child(2){
+        left: 42%;
+        top: 20.6%;
+    } 
+}
+
+@media (max-width: 410px) {
+    .clip_title{
+        font-size: 1.1rem;
+        margin: 1rem 0 -5rem 0;
+    }
+
+    .clip_content{
+        top: 6rem;
+    }
+
+    .clip_content>:nth-child(2){
+        transform: scale(0.4);
+        left: 40%;
+        top: 14.5%;
+    }
+
+    .pulsing {
+        left: -2.4rem;
+        top: -2.3rem;
+        border: 6px solid #ffffff9f;
+    }
+
+    .clip_content>:nth-child(3){
+        transform: scale(0.4);
+    }
+
+    .video_player span{
+        right: 0.3rem;
+        font-size: 0.8rem;
+    }
+}

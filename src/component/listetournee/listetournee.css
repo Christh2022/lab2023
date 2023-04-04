@@ -1,0 +1,45 @@
+.list_tournee{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 7rem 0 0 0;
+    gap: 3rem;
+}
+
+.list_tournee img{
+    object-fit: cover;
+    width: 300px;
+}
+
+@media (min-width: 1400px) {
+    .list_tournee{
+        gap: 15rem;
+    }
+
+    .list_tournee img{
+        transform: scale(1.1);
+        width: 400px;
+    }
+}
+
+@media (max-width: 960px) {
+    .list_tournee{
+        transform: scale(0.95);
+        gap: 4rem;
+        margin-bottom: -4rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .list_tournee{
+        transform: scale(0.85);
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin: 0 0 -5rem 0;
+    }
+    .list_tournee img{
+        width: 300px;
+    }
+}

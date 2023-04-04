@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
+import Tournee from './pages/Tournee';
+import { useState } from 'react';
+import Error from './pages/Error';
+import Actus from './pages/Actus';
+
 
 function App() {
+  const [isActive, setIsActive] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Home setIsActive={setIsActive} isActive={isActive}/>}/>
+            <Route path='/tournee' element={<Tournee setIsActive={setIsActive} isActive={isActive}/>}/>
+            <Route path='/actus' element={<Actus setIsActive={setIsActive} isActive={isActive}/>}/>
+            <Route path='/*' element={<Error setIsActive={setIsActive}/>}/>
+          </Routes>
+        </BrowserRouter>
+      </>
   );
 }
 

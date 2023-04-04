@@ -1,0 +1,140 @@
+.actus_wrapper{
+    width: 100%;
+    box-sizing: border-box;
+    background: url("../assets/dégradé.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.actus_wrapper>:nth-child(2){
+    width: 100%;
+    padding: 0;
+    height: 70vh;
+}
+
+.actus_wrapper>:nth-child(2) img{
+    width: 100%;
+    padding: 0;
+    height: 100%;
+}
+
+
+.actus_wrapper>.actus_article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 6rem 0;
+}
+
+.actus_wrapper>.actus_article>article{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10rem;
+}
+
+article>*{
+    width: calc(26% - 10px);
+    height: 500px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+article>*>img{
+    height: 100%;
+    width: 100%;
+}
+
+article>*>:nth-child(2){
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0 0 1rem 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+article>*>:nth-child(3){
+    width: 10rem;
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 100;
+    background: var(--green);
+    color: white;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+
+@media (min-width : 1400px) {
+    .actus_wrapper>.actus_article{
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 960px) {
+    .actus_wrapper>.actus_article{
+        transform: scale(0.9);
+        margin-top: -5rem;
+    }
+
+    .actus_wrapper>.actus_article>article{
+        gap: 7.5rem;
+    }
+
+    article>*>:nth-child(2){
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+@media (max-width: 720px) {
+    .actus_wrapper>:nth-child(2){
+        height: 55vh;
+    }
+
+    .actus_wrapper>.actus_article{
+        transform: scale(0.76);
+        margin-top: -20rem;
+    }
+
+    .actus_wrapper>.actus_article>article{
+        gap: 5rem;
+    }
+
+    article>*{
+        width: calc(40% - 10px);
+    }
+
+    article>*>:nth-child(2){
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 470px) {
+    .actus_wrapper>:nth-child(2){
+        height: 50vh;
+    }
+
+    .actus_wrapper>.actus_article{
+        transform: scale(0.6);
+        margin: -45rem 0 -6rem 0;
+    }
+
+    article>*{
+        width: calc(100% - 10px);
+    }
+
+    article>*>:nth-child(2){
+        font-size: 1rem;
+    }
+    
+}

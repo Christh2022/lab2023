@@ -1,0 +1,233 @@
+.slider_gallery{
+    width: 100%;
+    position: relative;
+    height: 500px;
+}
+
+.gallery_container{
+    display: flex;
+    align-items: center;
+    height: 400px;
+    margin: 0rem auto;
+    max-width: 1000px;
+    position: relative;
+    top: 8rem;
+}
+
+.gallery-item{
+    height: 250px;
+    opacity: 0;
+    position: absolute;
+    width: 330px;
+    z-index: 0;
+    border-radius: 15px;
+    background-size: contain;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+}
+
+.gallery-item-1,
+.gallery-item-2.index_1_CSS,
+.gallery-item-3.index_1_CSS{
+    left: 20%;
+    opacity: .4;
+    transform: translateX(-50%);
+    transition: all 0.4s ease-in-out;
+}
+
+.gallery-item-2.index_1_CSS,
+.gallery-item-3.index_1_CSS{
+    width: 330px; 
+    height: 250px; 
+    top: 19%;
+    z-index: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.gallery-item-2, 
+.gallery-item-1.index_2_CSS,
+.gallery-item-3.index_2_CSS{
+    height: 300px;
+    opacity: 1;
+    width: 430px;
+    z-index: 1;
+    top: -20%;
+    left: 50%;
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-50%);
+    box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, .35);
+}
+
+.gallery-item-1.index_2_CSS,
+.gallery-item-2.index_2_CSS{
+    width: 430px; 
+    height: 300px;
+    transition: all 0.4s ease-in-out; 
+}
+
+.gallery-item-3, 
+.gallery-item-1.index_3_CSS,
+.gallery-item-2.index_3_CSS{
+    opacity: 0.4;
+    left: 80%;
+    transform: translateX(-50%);
+    transition: all 0.4s ease-in-out;
+}
+
+.gallery-item-1.index_3_CSS,
+.gallery-item-2.index_3_CSS{
+    width: 330px; 
+    height: 250px; 
+    top: 19%;
+    z-index: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.gallery-controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: absolute;
+    top: 0rem;
+    width: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gallery-controls span{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 35px;
+    outline: none;
+    z-index: 999;
+}
+
+.gallery-controls-previous,
+.gallery-controls-next{
+    position: relative;
+}
+
+.play_video_slider{
+    position: absolute;
+    z-index: 999;
+    left: 50%;
+    transform: translate(-50%);
+    top: 10%;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out ;
+}
+
+.gallery_video_play{
+    position: absolute;
+    border-radius: 15px;
+    background-size: contain;
+    transition: all 0.4s ease-in-out;
+    height: 310px;
+    opacity: 1;
+    width: 430px;
+    background: black;
+    top: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 30;
+}
+
+.close_play{
+    position: absolute;
+    top: 0.3rem;
+    right: 1rem;
+    color: #ffffff7a;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+@media (max-width: 960px) {
+    .slider_gallery{
+        transform: scale(0.85);
+    }
+}
+
+@media (max-width: 720px) {
+    .gallery_container{
+        transform: scale(0.8);
+    }
+
+    /* .gallery-controls{
+        width: 500px;
+        top: 0rem;
+    } */
+
+    .gallery-item-1,
+    .gallery-item-2.index_1_CSS,
+    .gallery-item-3.index_1_CSS{
+        left: 0%;
+    }
+
+    .gallery-item-3, 
+    .gallery-item-1.index_3_CSS,
+    .gallery-item-2.index_3_CSS{
+        left: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .slider_gallery{
+        bottom: -3rem;
+    }
+    .gallery_container{
+        top: -5rem;
+        transform: scale(0.7);
+    }
+
+    .gallery-controls{
+        width: 300px;
+        top: 22rem;
+        justify-content: center;
+        gap: 6rem;
+    }
+
+    .gallery-item-1,
+    .gallery-item-2.index_1_CSS,
+    .gallery-item-3.index_1_CSS{
+        left: -5%;
+    }
+
+    .gallery-item-3, 
+    .gallery-item-1.index_3_CSS,
+    .gallery-item-2.index_3_CSS{
+        left: 105%;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .gallery_container{
+        top: -5rem;
+        transform: scale(0.55);
+    }
+
+    .gallery-controls{
+        width: 300px;
+        top: 13rem;
+        justify-content: center;
+    }
+
+    .gallery-item-1,
+    .gallery-item-2.index_1_CSS,
+    .gallery-item-3.index_1_CSS{
+        left: -10%;
+    }
+
+    .gallery-item-3, 
+    .gallery-item-1.index_3_CSS,
+    .gallery-item-2.index_3_CSS{
+        left: 120%;
+    }
+}

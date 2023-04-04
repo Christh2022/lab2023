@@ -1,0 +1,160 @@
+.home_container_intro{
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.home_container_intro>.pierre-image{
+    position: absolute;
+    top: -4rem;
+    left: 3rem;
+}
+
+.home_container_intro>.billet_and_look_at_me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    top: 9rem;
+    left: 70%;
+    width: 28rem;
+
+}
+
+.home_container_intro>.billet_and_look_at_me>:nth-child(1){
+    text-transform: uppercase;
+    font-family: 'Trajan Pro 3';
+    color: #090909;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.home_container_intro>:nth-child(2)>:nth-child(2){
+    background: var(--green);
+    padding: 1rem 2rem;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 1.25rem;
+    width: 8rem;
+    font-family: 'Trajan pro 3';
+    text-align: center;
+    color: white;
+}
+
+.billet_and_look_at_me{
+    width: 200px
+}
+
+
+@media (min-width: 1350px) {
+    .home_container_intro>.pierre-image{
+        position: absolute;
+        top: 0;
+        left: 6rem;
+        transform: scale(1.2);
+    }
+
+    .home_container_intro>.billet_and_look_at_me{
+        position: relative;
+        top: 9rem;
+        left: 62%;
+        width: 32rem;
+    }
+
+    .home_container_intro>.billet_and_look_at_me>:nth-child(1){
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .home_container_intro>.pierre-image{
+        position: absolute;
+        top: -7.8rem;
+        left: -7rem;
+        transform: scale(0.85);
+    }
+
+    .home_container_intro>.billet_and_look_at_me{
+        left: 63%;
+        width: 26rem;
+    }
+
+    .home_container_intro>.billet_and_look_at_me>:nth-child(1){
+        font-size: 32px;
+    }
+
+    .home_container_intro>.billet_and_look_at_me:nth-child(2){
+        transform: scale(0.8);
+    }
+}
+
+
+@media (max-width: 960px) {
+    .home_container_intro>.pierre-image{
+        position: absolute;
+        top: -8.6rem;
+        left: -1rem;
+        transform: scale(0.80);
+    }
+
+    .home_container_intro>.billet_and_look_at_me{
+        position: static;
+        margin-top: 28rem;
+        margin-left: 2rem;
+        width: 26rem;
+    }
+
+    .home_container_intro>.billet_and_look_at_me>:nth-child(1){
+        font-size: 34px;
+    }
+
+    .home_container_intro>:nth-child(2)>:nth-child(2){
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 720px) {
+    .home_container_intro>.pierre-image{
+        top: -9.8rem;
+        left: -7rem;
+        transform: scale(0.75);
+    }
+    .home_container_intro>.billet_and_look_at_me{
+        margin-top: 27rem;
+        width: 26rem;
+        margin-left: 0rem;
+    } 
+}
+
+@media (max-width: 600px) {
+    .home_container_intro>.pierre-image{
+        top: -9.8rem;
+        left: -10rem;
+    }
+}
+
+
+@media (max-width: 470px) {
+    .home_container_intro>.pierre-image{
+        top: -14.6rem;
+        left: -14rem;
+        transform: scale(0.55);
+    }
+    .home_container_intro>.billet_and_look_at_me{
+        margin-top: 20rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .home_container_intro>.pierre-image{
+        left: -16rem;
+        top: -15.8rem;
+        transform: scale(0.5);
+    }
+}
