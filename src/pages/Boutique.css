@@ -167,6 +167,11 @@
     .stor_location_info{
        transform: scale(0.65);
     }
+
+    .stor_location_info{
+        margin: -15.5rem 0 4rem 0;
+    }
+    
 }
 
 

@@ -95,3 +95,10 @@
         width: 300px;
     }
 }
+
+@media (max-width: 420px) {
+    .tournee_item{
+        transform: scale(0.74);
+        left: -0.5rem;
+    }
+}
