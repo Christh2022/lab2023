@@ -45,15 +45,10 @@ const Home = ({isActive, setIsActive}) => {
                 <Intro pierre={pierre} isActive={isActive}/>
                 <div style={{width: '100%'}}>
                     {!isActive &&<> <div className='home_container_wrapper'>
-                        
                         <Clip/>
                         <ABOUT_ACTUS />
                         <Award/>
                         <Newsletter/>
-                        
-
-                        {/*
-                        <section className='home_container_newsletter'></section> */}
                     </div>
                     <Footer/></>}
                 </div> 
