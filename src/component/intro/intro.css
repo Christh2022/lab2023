@@ -35,16 +35,20 @@
 
 .home_container_intro>:nth-child(2)>:nth-child(2){
     background: var(--green);
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     font-size: 20px;
-    font-weight: 400;
+    letter-spacing: 2px;
     text-transform: uppercase;
     border-radius: 1.25rem;
     width: 8rem;
-    font-family: 'Trajan pro 3';
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     text-align: center;
     color: white;
+    cursor: pointer;
+    margin-top: -1rem;
 }
+
 
 .billet_and_look_at_me{
     width: 200px
@@ -54,20 +58,24 @@
 @media (min-width: 1350px) {
     .home_container_intro>.pierre-image{
         position: absolute;
-        top: 0;
+        top: -4rem;
         left: 6rem;
-        transform: scale(1.2);
     }
 
     .home_container_intro>.billet_and_look_at_me{
         position: relative;
         top: 9rem;
-        left: 62%;
-        width: 32rem;
+        left: 55%;
+        width: 50rem;
+        font-weight: 900;
     }
 
     .home_container_intro>.billet_and_look_at_me>:nth-child(1){
-        font-size: 65px;
+        font-size: 60px;
+    }
+
+    .home_container_intro>:nth-child(2)>:nth-child(2){
+        margin-top: -2.5rem;
     }
 }
 

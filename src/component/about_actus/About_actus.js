@@ -11,7 +11,7 @@ const ABOUT_ACTUS = () => {
                     <h3>album</h3>
                     <span>regarde moi</span>
                 </div>
-                <span>Ecoutez</span>
+                <span>écoutez</span>
             </div>
         </div>
     );

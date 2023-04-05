@@ -25,12 +25,13 @@
 }
 
 .home_container_about>:nth-child(2)>:nth-child(1)>:nth-child(1){
-    font-weight: 100;
+    font-weight: 400;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     font-size: 32px;
     padding: 0.5rem 0;
     margin: 0;
+    letter-spacing: 2.5px;
 }
 
 .home_container_about>:nth-child(2)>:nth-child(1)>:nth-child(2){
@@ -38,19 +39,21 @@
     font-family: 'Poppins', sans-serif;
     color: #090909;
     letter-spacing: 2px;
-    font-weight: bolder;
+    font-weight: 900;
     font-size: 38px;
+    letter-spacing: 3px;
 }
 
 .home_container_about>:nth-child(2)>:nth-child(2){
     background: var(--green);
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 700;
+    letter-spacing: 2px;
     text-transform: uppercase;
     border-radius: 1.25rem;
     width: 8rem;
-    font-family: 'Trajan pro 3';
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     color: white;
     margin: 0.8rem 0 0 0;
@@ -102,7 +105,7 @@
     .home_container_about{
         transform: scale(0.41);
         left: -8.6rem;
-        top: -6.9rem;
+        top: -8rem;
     }
 }
 

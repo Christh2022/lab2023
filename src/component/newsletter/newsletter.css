@@ -75,17 +75,23 @@ input::placeholder{
 }
 
 .newsletter button{
-    width: 10rem;
-    padding: 0.5rem 0rem;
-    background: var(--green);
     border: none;
-    border-radius: 1.5rem;
-    color: #ffffff;
     position: relative;
     left: 50%;
     transform: translate(-50%);
+    background: var(--green);
+    padding: 0.5rem 2rem;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 1.25rem;
+    width: 10rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: white;
     cursor: pointer;
-    font-size: 20px;
+    
 }
 
 @media (min-width: 1400px) {
@@ -111,8 +117,6 @@ input::placeholder{
     }
 
     .newsletter button{
-        width: 25rem;
-        font-size: 25px;
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
@@ -153,6 +157,10 @@ input::placeholder{
         padding: 0.8rem 0.5rem;
     }
 
+    .newsletter button{
+        font-size: 16.5px;
+    }
+
 }
 
 @media (max-width: 724px) {
@@ -182,6 +190,15 @@ input::placeholder{
         width: calc(80% - 20px);
     }
 
+    .newsletter button{
+        font-size: 15px;
+    }
+
+    .newsletter.actus{
+        position: relative;
+        top: -6rem;
+        margin-bottom: 0;
+    }
 
 }
 
@@ -211,7 +228,7 @@ input::placeholder{
 
     .newsletter{
         margin-top: 7rem;
-        transform: scale(0.75);
+        transform: scale(0.8);
     }
 
     .newsletter_store_wrapper{
@@ -231,5 +248,16 @@ input::placeholder{
     .newsletter form input{
         width: calc(90% - 20px);
         padding: 0.5rem;
+    }
+
+    .newsletter button{
+        font-size: 13px;
+        width: 8.55rem;
+    }
+
+    .newsletter.actus{
+        position: relative;
+        top: -8rem;
+        margin-bottom: 0;
     }
 }

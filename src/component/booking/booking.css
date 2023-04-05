@@ -36,14 +36,18 @@
 
 .booking_wrapper>:nth-child(1)>:nth-child(1)>:nth-child(2){
     background: var(--green);
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 23px;
-    border-radius: 1.5rem;
-    color: #fff;
+    padding: 0.5rem 2rem;
+    font-size: 20px;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: 100;
+    border-radius: 1.25rem;
+    width: 8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: white;
     cursor: pointer;
+    margin-top: -1rem;
 }
 
 .booking_wrapper>:nth-child(1)>img{
@@ -61,6 +65,10 @@
 
     .booking_wrapper>:nth-child(1)>:nth-child(1){
         transform: scale(1.2);
+    }
+
+    .booking_wrapper>:nth-child(1)>:nth-child(1)>:nth-child(2){
+        transform: scale(0.8);
     }
 } 
 

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 import './clip.css'
-import clip1 from '../../assets/arrière plan 1.jpg'
-import clip2 from '../../assets/arrière plan .jpg'
-import clip3 from '../../assets/arrière plan 2.jpg'
+import clip1 from '../../assets/arrière plan clip 1.jpg'
+import clip2 from '../../assets/arrière plan clip 2.jpg'
+import clip3 from '../../assets/arrière plan clip 3.jpg'
 import {BsPlayCircleFill} from 'react-icons/bs'
 import {RxCrossCircled} from 'react-icons/rx'
 

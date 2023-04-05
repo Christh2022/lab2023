@@ -9,6 +9,8 @@ const Newsletter = () => {
         setEmail("")
     }
 
+
+
     return (
         <div className='newsletter'> 
             <div className='newsletter_store'>

@@ -49,6 +49,7 @@
     height: 2rem;
     background: var(--pink);
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .clip_content>:nth-child(3)>*.active{
@@ -61,8 +62,8 @@
     height: 9rem;
     z-index: -1;
     position: absolute;
-    left: -2.4rem;
-    top: -1.9rem;
+    left: -2.3rem;
+    top: -1.97rem;
     border-radius: 100%;
     border: 5px solid #ffffff;
     animation-duration: 3s;
@@ -104,9 +105,6 @@
     cursor: pointer;
 }
 
-
-
-
 @keyframes pulse {
     from {
       transform: scale(0.5);
@@ -119,13 +117,10 @@
     }
 }
 
-
-
-
 @media (min-width: 1400px){
 
     .clip_title{
-        margin: 0rem 0 -5rem 0;
+        margin: 10rem 0 -8rem 0;
     }
     .clip_content>:nth-child(2){
         position: absolute;
@@ -134,8 +129,8 @@
     }
 
     .pulsing {
-        left: -1.9rem;
-        top: -1.2rem;
+        left: -1.8rem;
+        top: -1.25rem;
     }
 }
 
@@ -168,12 +163,18 @@
         right: 1.6rem;
         font-size: 1.6rem;
     }
+
+    .pulsing {
+        left: -2.3rem;
+        top: -2rem;
+        border: 6px solid #ffffff9f;
+    }
 }
 
 @media (max-width: 725px) {
     .clip_title{
         font-size: 1.7rem;
-        margin: 4rem 0 -10rem 0;
+        margin: 2rem 0 -10rem 0;
     }
 
     .clip_content{
@@ -187,8 +188,8 @@
     }
 
     .pulsing {
-        left: -2.3rem;
-        top: -2.05rem;
+        left: -2.45rem;
+        top: -1.96rem;
         border: 6px solid #ffffff9f;
     }
 
@@ -213,12 +214,17 @@
         left: 42%;
         top: 20.6%;
     } 
+    .pulsing {
+        left: -2.4rem;
+        top: -1.9rem;
+        border: 6px solid #ffffff9f;
+    }
 }
 
 @media (max-width: 410px) {
     .clip_title{
         font-size: 1.1rem;
-        margin: 1rem 0 -5rem 0;
+        margin: -3.5rem 0 -5rem 0;
     }
 
     .clip_content{
@@ -231,11 +237,6 @@
         top: 14.5%;
     }
 
-    .pulsing {
-        left: -2.4rem;
-        top: -2.3rem;
-        border: 6px solid #ffffff9f;
-    }
 
     .clip_content>:nth-child(3){
         transform: scale(0.4);
@@ -244,5 +245,11 @@
     .video_player span{
         right: 0.3rem;
         font-size: 0.8rem;
+    }
+
+    .pulsing {
+        left: -2.4rem;
+        top: -2.26rem;
+        border: 6px solid #ffffff9f;
     }
 }

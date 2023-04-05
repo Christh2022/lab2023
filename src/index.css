@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 @font-face {
   font-family: 'Reey';
   src: url('./fonts/Reey-Regular.otf') format('truetype');
-  font-weight: normal;
+}
+@font-face {
+  font-family: 'Trajan Pro 3';
+  src: url('./fonts/trajan-pro-3-2.otf') format('truetype');
 }
 
 :root{
@@ -18,7 +19,6 @@ html{
   width: 100%;
   overflow-x: hidden;
 }
-
 
 body {
   margin: 0;
@@ -34,7 +34,6 @@ body {
 ::-webkit-scrollbar{
   width: 0;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
