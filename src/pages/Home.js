@@ -2,7 +2,7 @@ import gsap from 'gsap';
 import React , { useEffect }  from 'react';
 import Logo from '../assets/logo PDM-03-03-03.png'
 import Navbar from '../component/navbar/Navbar';
-import pierre from '../assets/Plan de travail 2 1.png'
+import pierre from '../assets/pierre.png'
 import './Home.css'
 import Intro from '../component/intro/Intro';
 import Clip from '../component/clip/Clip';

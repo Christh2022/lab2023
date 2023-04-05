@@ -1,6 +1,6 @@
 import React, { useEffect , useState } from 'react';
 import img1 from '../../assets/nouvelle affiche V2 2.png'
-import img2 from '../../assets/Plan de travail 2 copie@1x_2.jpg'
+import img2 from '../../assets/Plan de travail 2 1.png'
 import './listetournee.css'
 import { collection, onSnapshot, orderBy, query } from 'firebase/firestore';
 import { database } from '../../firebase';
