@@ -222,6 +222,7 @@ article>*>:nth-child(3){
 
     .actus_wrapper_infos h2{
         margin: -3rem 0 0 0;
+        font-size: 1rem;
     }
     article>*>img{
         left: 50%;
