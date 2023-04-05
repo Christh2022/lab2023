@@ -9,8 +9,8 @@ import gsap  from 'gsap';
 import {useNavigate} from 'react-router-dom'
 
 const NavbarComponent = ({isActive, setIsActive}) => {
-    const [showMenu, setShowMenu] = useState(false);
     const navigate = useNavigate()
+    const [showMenu, setShowMenu] = useState(false);
 
     useEffect(()=>{
         
@@ -52,9 +52,11 @@ const NavbarComponent = ({isActive, setIsActive}) => {
     }
 
     const handleIsActive = ()=>{
-        if (isActive) {
+        if (isActive && !showMenu ) {
             setIsActive(false)
         }
+
+        console.log(isActive, showMenu);
     }
     return (
         <div className='home-menu' style={{padding: '0.4rem 0'}}>
@@ -82,7 +84,7 @@ const NavbarComponent = ({isActive, setIsActive}) => {
                     </div>
                     <ul className={showMenu? 'show-mobile-menu' : 'hide-mobile-menu'}>
                         <li onClick={()=>{handleIsActive(); navigate('/')}}>
-                             <Link>
+                             <Link to=''>
                                 <span data-clip="accueil" className='nav-item'>accueil</span> 
                              </Link>
                         </li>
