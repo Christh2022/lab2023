@@ -69,11 +69,12 @@
 
 .store_location{
     width: 100%;
-    height: 500px;
+    height: 650px;
 }
 
 .store_location img{
     width: 100%;
+    height: 100%;
 }
 
 .stor_location_info{
@@ -103,6 +104,10 @@
     .store_body{
         gap: -5rem;
     }
+
+    .store_location{
+        height: 750px;
+    }
 }
 
 
@@ -120,6 +125,10 @@
 
     .store_body li{
         height: 480px;
+    }
+
+    .store_location{
+        height: 600px;
     }
 }
 
@@ -145,6 +154,10 @@
     .store_title span{
         font-size: 0.8rem;
     }
+
+    .store_location{
+        height: 550px;
+    }
 }
 
 @media (max-width: 420px) {
@@ -169,8 +182,13 @@
     }
 
     .stor_location_info{
-        margin: -15.5rem 0 4rem 0;
+        margin: 0.5rem 0 4rem 0;
     }
+
+    .store_location{
+        height: 500px;
+    }
+
     
 }
 
