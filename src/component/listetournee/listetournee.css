@@ -13,6 +13,55 @@
     width: 300px;
 }
 
+.list_tournee>:nth-child(2){
+    position: relative;
+}
+
+.tournee_item{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    color: #fff;
+    font: 1rem;
+    font-family: 'Poppins', sans-serif;
+    left: 50%;
+    width: 300px;
+    transform: translateX(-50%);
+}
+
+.tournee_item li{
+    list-style: none;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    right: 0;
+    font-size: 0.6rem;
+}
+
+.tournee_item li>*{
+    padding: 0 0.1rem;
+}
+
+.tournee_item li>:nth-child(1){
+    font-weight: 400;
+    font-size: 0.5;
+}
+
+.tournee_item li>:nth-child(2){
+    letter-spacing: 1px;
+}
+
+.tournee_item li>:nth-child(2),
+.tournee_item li>:nth-child(3){
+    font-weight: 900;
+    font-size: 0.5;
+}
+
+.tournee_item li>:nth-child(4){
+    font-weight: 100;
+    
+    font-size: 0.5;
+}
 @media (min-width: 1400px) {
     .list_tournee{
         gap: 15rem;
@@ -29,6 +78,9 @@
         transform: scale(0.95);
         gap: 4rem;
         margin-bottom: -4rem;
+    }
+     .tournee_item li{
+        font-size: 0.45rem;
     }
 }
 

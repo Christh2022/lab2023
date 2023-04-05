@@ -40,7 +40,7 @@ const Actus = ({isActive, setIsActive}) => {
                     <NavbarComponent setIsActive={setIsActive} isActive={isActive}/>
                 </div>
                 <div>
-                    <img src={rectangle} alt="" />
+                    <img src={rectangle} alt="/" />
                 </div>
                 <div className='actus_article'>
                     <article>

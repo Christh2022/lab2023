@@ -5,6 +5,7 @@ import Tournee from './pages/Tournee';
 import { useState } from 'react';
 import Error from './pages/Error';
 import Actus from './pages/Actus';
+import Boutique from './pages/Boutique';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route path='/' element={<Home setIsActive={setIsActive} isActive={isActive}/>}/>
             <Route path='/tournee' element={<Tournee setIsActive={setIsActive} isActive={isActive}/>}/>
             <Route path='/actus' element={<Actus setIsActive={setIsActive} isActive={isActive}/>}/>
+            <Route path='/boutique' element={<Boutique setIsActive={setIsActive} isActive={isActive}/>}/>
             <Route path='/*' element={<Error setIsActive={setIsActive}/>}/>
           </Routes>
         </BrowserRouter>
