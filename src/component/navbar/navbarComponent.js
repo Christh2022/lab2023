@@ -52,11 +52,11 @@ const NavbarComponent = ({isActive, setIsActive}) => {
     }
 
     const handleIsActive = ()=>{
-        if (isActive && !showMenu ) {
+        if (isActive) {
             setIsActive(false)
         }
 
-        console.log(isActive, showMenu);
+        console.log(isActive, showMenu)
     }
     return (
         <div className='home-menu' style={{padding: '0.4rem 0'}}>
