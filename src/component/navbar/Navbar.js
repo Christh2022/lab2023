@@ -122,8 +122,9 @@ const Navbar = ({Logo,isActive, setIsActive}) => {
     }
 
     const handleIsActive = ()=>{
-        if (isActive && !showMenu) {
+        if (isActive) {
             setIsActive(false)
+            setShowMenu(!showMenu)
             console.log(isActive);
         }
     }
