@@ -36,7 +36,7 @@ const Home = ({isActive, setIsActive}) => {
             duration: 0.6,
             delay: 0.7
         })
-    }, [])
+    }, []) 
 
     return (
         <>
