@@ -1,7 +1,13 @@
 import React from 'react';
 import './award.css'
 import award from '../../assets/awrd pierre de marre 1.png'
+import { useNavigate } from 'react-router-dom';
 const Award = () => {
+    const navigate = useNavigate()
+
+    const handleAward = ()=>{
+        navigate('/actus')
+    }
     return (
         <div className='content_award'>
             <div className="content_award_wrapper">
@@ -20,7 +26,7 @@ const Award = () => {
                     </div>
                 </div>
             </div>
-            <span>en savoir plus</span>
+            <span onClick={handleAward}>en savoir plus</span>
         </div>
     );
 };
