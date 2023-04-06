@@ -52,8 +52,9 @@ const NavbarComponent = ({isActive, setIsActive}) => {
     }
 
     const handleIsActive = ()=>{
-        if (isActive) {
+        if (isActive ) {
             setIsActive(false)
+            setShowMenu(!showMenu)
         }
 
         console.log(isActive, showMenu)
